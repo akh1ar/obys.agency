@@ -305,5 +305,66 @@ nav .nav1 h4 {
 .page5{
     min-height: 100vh;
     width: 100%;
-    /* padding: 5vw 0; */
+    position: relative;
+}
+
+#page5-moving-elem{
+  white-space: nowrap;
+
+  margin-bottom: -2vw;
+}
+
+#page5-moving-elem h1{
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px ;
+  animation-name: marque;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes marque {
+  from{
+    transform: translateX(0);
+  }to{
+    transform: translateX(calc(-100% - 20px));
+  }
+}
+#page5-moving-elem span{
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
+}
+
+#page5-moving-elemRev{
+  white-space: nowrap;
+  margin-bottom: -2vw;
+}
+
+#page5-moving-elemRev h1{
+  font-size: 7vw;
+  -webkit-text-stroke: 1px #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: transparent;
+  display: inline-block;
+  margin-right: 16px ;
+  transform: translateX(calc(-100% - 20px));
+  animation-name: marque;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+
+#page5-moving-elemRev span{
+  font-style: italic;
+  font-family: "silk serif";
+  color: transparent;
 }
