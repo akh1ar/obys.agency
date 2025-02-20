@@ -152,12 +152,11 @@ nav .nav1 h4 {
   width: 72%;
   margin-left: 28%;
   height: fit-content;
-  overflow: hidden;
+  overflow-y: hidden;
   display: flex;
   align-items: center;
-  position: relative;
-  z-index: 999;
 }
+
 #content:nth-child(2) {
   margin-top: 17vh;
 }
@@ -166,6 +165,15 @@ nav .nav1 h4 {
   text-transform: uppercase;
   line-height: 7.2vw;
   font-weight: 600;
+}
+.content1::before {
+  content: "01";
+  position: absolute;
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: 20%;
+  top: 33%;
 }
 .content3 h2 {
   font-size: 7.2vw;
@@ -250,7 +258,15 @@ nav .nav1 h4 {
     font-size: 7vw;
     text-transform: uppercase;
 }
-
+.page4-content h1::before {
+  content: "03";
+  position: absolute;
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -14%;
+  top: 0%;
+}
 #page4-content-underline{
     height: 1px;
     width: 90%;
@@ -367,4 +383,58 @@ nav .nav1 h4 {
   font-style: italic;
   font-family: "silk serif";
   color: transparent;
+}
+.footer{
+  height: 100vh;
+  width: 72%;
+  /* background-color: red; */
+  position: relative;
+  margin-left: 28vw;
+  padding-right: 2vw;
+}
+.footer h1{
+  font-size: 7vw;
+  text-transform: uppercase;
+  /* background-color: #3F7DF4; */
+  position: relative;
+}
+.footer h1::before{
+  content: "04";
+  position: absolute;
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -14%;
+  top:8%
+}
+.underline{
+  height: 2px;
+  width: 93%;
+  background-color: #fff;
+  margin: 3vw 0;
+}
+#footer-content{gi
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-right: 15vw;
+  padding-top: 4vw;
+  margin-bottom: 8vw;
+}
+#footer-box{
+  width: 25%;
+}
+#footer-box h6{
+  font-size: 1vw;
+  margin-bottom: 1.5vw;
+
+}
+#footer-box h5{
+  font-size: 1.8vw;
+  font-weight: 500;
+  /* margin: 0.2vw 0; */
+}
+.footer>h5{
+  font-weight: 500;
+  font-size: 1vw;
 }
