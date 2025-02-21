@@ -42,7 +42,7 @@ tl.to('.loader',{
 tl.from("nav",{
     opacity:0
 });
-tl.from("#content h1,.content3 h2",{
+tl.from(".page1no h3,#content h1,.content3 h2",{
     y:120,
     stagger:0.2
 });

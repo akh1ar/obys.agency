@@ -166,7 +166,7 @@ nav .nav1 h4 {
   line-height: 7.2vw;
   font-weight: 600;
 }
-.content1::before {
+/* .content1::before {
   content: "01";
   position: absolute;
   font-size: 3.5vw;
@@ -174,6 +174,19 @@ nav .nav1 h4 {
   font-family: "silk serif";
   left: 20%;
   top: 33%;
+} */
+.page1no{
+  position: absolute;
+  height: 10vh;
+  width: 10vh;
+  left: 18.7%;
+  top: 31.7%;
+  overflow-y: hidden;
+}
+.page1no h3{
+  font-size: 3.5vw;
+  font-weight: 100;
+  font-family: "silk serif";
 }
 .content3 h2 {
   font-size: 7.2vw;
