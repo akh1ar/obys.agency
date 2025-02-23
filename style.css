@@ -86,14 +86,10 @@ body{
   font-size: 5vw;
   text-transform: uppercase;
   font-weight: 900;
-  /* animation-name: anime; */
+  animation-name: anime;
   opacity: 0;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-}
-main {
-  position: relative;
-  background-color: #030303;
 }
 @keyframes anime {
   0% {
@@ -125,17 +121,24 @@ main {
     opacity: 0;
   }
 }
+main {
+  position: relative;
+  background-color: #151515;
+}
+
 
 .page1 {
   height: 100vh;
   width: 100%;
-  background-color: #151515;
+  z-index: 100;
+  position: relative;
+  /* background-color: #151515; */
 }
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3.2vw 5vw;
+  padding: 3vw 5vw;
 }
 nav .nav1 {
   display: flex;
@@ -158,23 +161,15 @@ nav .nav1 h4 {
 }
 
 #content:nth-child(2) {
-  margin-top: 17vh;
+  margin-top: 18vh;
 }
 #content h1 {
   font-size: 7.2vw;
   text-transform: uppercase;
   line-height: 7.2vw;
   font-weight: 600;
+  position: relative;
 }
-/* .content1::before {
-  content: "01";
-  position: absolute;
-  font-size: 3.5vw;
-  font-weight: 100;
-  font-family: "silk serif";
-  left: 20%;
-  top: 33%;
-} */
 .page1no{
   position: absolute;
   height: 10vh;
@@ -210,7 +205,6 @@ nav .nav1 h4 {
   height: 100vh;
   width: 100%;
   padding-top: 17vh;
-  background-color: #151515;
   position: relative;
 }
 #video-container {
@@ -219,18 +213,14 @@ nav .nav1 h4 {
   position: relative;  
   left: 28%;
   background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
-}
-#video-container img {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  top: 0;
+  background-size: cover;
+  background-position: center;
 }
 #video-container video {
   height: 99.9%;
   width: 100%;
   object-fit: cover;
+  opacity: 0;
 }
 #video-crsr{
   background-color: #ffa630;
@@ -243,7 +233,7 @@ nav .nav1 h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 9;
+  z-index: 1;
 }
 #video-crsr i {
   font-size: 2.3vw;
@@ -271,6 +261,12 @@ nav .nav1 h4 {
     font-size: 7vw;
     text-transform: uppercase;
 }
+.underline{
+  height: 1px;
+  width: 90%;
+  background-color: #8A8A8A;
+  margin: 5vw 0;
+}
 .page4-content h1::before {
   content: "03";
   position: absolute;
@@ -280,13 +276,6 @@ nav .nav1 h4 {
   left: -14%;
   top: 0%;
 }
-#page4-content-underline{
-    height: 1px;
-    width: 90%;
-    background-color: #8A8A8A;
-    margin: 5vw 0;
-}
-
 .page4-content>p{
     font-size: 2.3vw;
     width: 50%;
@@ -420,12 +409,7 @@ nav .nav1 h4 {
   left: -14%;
   top:8%
 }
-.underline{
-  height: 2px;
-  width: 93%;
-  background-color: #fff;
-  margin: 3vw 0;
-}
+
 #footer-content{
   display: flex;
   align-items: flex-start;
