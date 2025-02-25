@@ -130,9 +130,8 @@ main {
 .page1 {
   height: 100vh;
   width: 100%;
-  z-index: 100;
+  /* z-index: 100; */
   position: relative;
-  /* background-color: #151515; */
 }
 nav {
   display: flex;
@@ -242,13 +241,50 @@ nav .nav1 h4 {
 .page3{
     min-height: 100vh;
     width: 100%;
-    background-color: rgb(100, 100, 100);
     position: relative;
+    padding: 7vh 2vw;
+
+}
+.page3 h1{
+  font-size: 7vw;
+  text-transform: uppercase;
+  margin-left: 26vw;
+  position: relative;
+}
+.page3 h1::before {
+  content: "02";
+  position: absolute;
+  font-size: 3vw;
+  font-weight: 100;
+  font-family: "silk serif";
+  left: -12%;
+  top: 8%;
+}
+.page3 .underline{
+  margin-left: 26vw;
+}
+.page3 .container{
+  /* background-color: red; */
+  padding: 1vw;
+  position: relative;
+}
+.img-container{
+  /* background-color: #3F7DF4; */
+  height: 33vw;
+  width: 24vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-container img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 .page4{
     min-height: 100vh;
     width: 100%;
-    background-color: #151515;
     position: relative;
     padding: 7vh 0;
 }
@@ -261,12 +297,6 @@ nav .nav1 h4 {
     font-size: 7vw;
     text-transform: uppercase;
 }
-.underline{
-  height: 1px;
-  width: 90%;
-  background-color: #8A8A8A;
-  margin: 5vw 0;
-}
 .page4-content h1::before {
   content: "03";
   position: absolute;
@@ -275,6 +305,12 @@ nav .nav1 h4 {
   font-family: "silk serif";
   left: -14%;
   top: 0%;
+}
+.underline{
+  height: 1px;
+  width: 90%;
+  background-color: #8A8A8A;
+  margin: 5vw 0;
 }
 .page4-content>p{
     font-size: 2.3vw;
@@ -387,7 +423,7 @@ nav .nav1 h4 {
   color: transparent;
 }
 .footer{
-  height: 100vh;
+  height: 108vh;
   width: 72%;
   /* background-color: red; */
   position: relative;
@@ -434,4 +470,12 @@ nav .nav1 h4 {
 .footer>h5{
   font-weight: 500;
   font-size: 1vw;
+}
+.footer .underline{
+  margin-top: 5vw;
+  margin-bottom: 3vw;
+}
+._canvas_container {
+  z-index: 999999 !important;
+  pointer-events: none;
 }
