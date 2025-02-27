@@ -38,6 +38,7 @@ body{
   background-color: rgb(255,255,255);
   scale: 3;
   mix-blend-mode: difference;
+  z-index: 9998;
 }
 .loader {
   height: 100%;
@@ -211,7 +212,7 @@ nav .nav1 h4 {
   width: 71.29vw;
   position: relative;  
   left: 28%;
-  /* background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg); */
+  background-image: url(https://obys.agency/wp-content/uploads/2022/11/Showreel-2022-preview-1.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -232,7 +233,7 @@ nav .nav1 h4 {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 1;
+  z-index: 9;
 }
 #video-crsr i {
   font-size: 2.3vw;
@@ -545,7 +546,40 @@ nav .nav1 h4 {
   /* background-color: #3F7DF4; */
   position: relative;
 }
-.footer h1::before{
+.footerHeading {
+  position: relative;
+  /* background-color: red; */
+}
+
+.footerHeading h2 {
+  font-size: 7.2vw;
+  text-transform: uppercase;
+  position: absolute;
+  top: -10%;
+  font-weight: 500;
+  left: 0;
+  font-family: "silk serif";
+}
+.footerHeading svg{
+  height: 60%;
+  position: absolute;
+  top: 24%;
+  left: 66%;
+  transition: all ease 0.5s;
+}
+
+.footerHeading:hover svg {
+  left: 75%;
+}
+
+
+.footerHeading h2 span {
+  font-family: "silk serif";
+  opacity: 0;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+}
+.footerHeading::before{
   content: "04";
   position: absolute;
   font-size: 3.5vw;
@@ -587,4 +621,34 @@ nav .nav1 h4 {
 ._canvas_container {
   z-index: 999999 !important;
   pointer-events: none;
+}
+
+#flag{
+  height: 65vh;
+  width: 22vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 8;
+}
+#content h1{
+  position: relative;
+  z-index: 10;
+}
+.content3 h2{
+  /* background-color: red; */
+  position: relative;
+  z-index: 10;
+
+}
+
+#page-heading-con{
+    /* background-color: red; */
+    width: 100%;
+    height: fit-content;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
 }
