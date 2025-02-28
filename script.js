@@ -87,12 +87,11 @@ function loadingAnimtion() {
   });
 }
 function crsrAnimation() {
-  Shery.mouseFollower({
-    skew: true,
+  Shery.mouseFollower()
+  Shery.makeMagnet(".magnet-target",{
     ease: "cubic-bezier(0.23, 1, 0.320, 1)",
     duration: 1,
   });
-  // Shery.makeMagnet(".nav1 h4");
 }
 function videoplay() {
   let videoContainer = document.querySelector("#video-container");
